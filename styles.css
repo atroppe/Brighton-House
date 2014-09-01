@@ -1,13 +1,14 @@
 /*to fix: make nav bar circles rounder, get rid of delay on nav hover, make photos shift to center of page on hover, give varied overlay colors, add links to top nav and create link style*/
- *, *:after, *:before {
-    box-sizing:border-box;
+
+*, *:after, *:before {
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 * {
     -webkit-transition: all .5s ease;
 }
 body, html {
-    background-color:#051632;
+    background-color: #051632;
     margin: 0;
     padding: 0;
 }
@@ -15,16 +16,16 @@ header {
     color: HSLA(170, 30%, 92%, 1);
     font-size: 3rem;
     text-align: center;
-    background-color:#051632;
+    background-color: #051632;
     padding: 60px 20px 20px 20px;
     margin: 0 auto;
-    font-family:'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     overflow: auto;
 }
 footer {
     color: HSLA(170, 30%, 92%, 1);
     text-align: center;
-    background-color:#051632;
+    background-color: #051632;
     padding: 60px;
 }
 .box {
@@ -79,27 +80,27 @@ footer {
     font-family: arial, sans-serif;
     font-size: 1rem;
     font-weight: 100;
-    letter-spacing:2px;
+    letter-spacing: 2px;
 }
 .bottomNav li {
     display: inline;
 }
 .address {
-    font-family:'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     font-size: 2rem;
 }
 .cell {
     display: inline-block;
     vertical-align: top;
     margin: 0 auto;
-    width:33.33%;
+    width: 33.33%;
     height: 300px;
 }
 .babyBlue {
     background-color: HSLA(182, 86%, 65%, 1);
 }
 .red {
-    background-color:HSLA(359, 100%, 50%, 1);
+    background-color: HSLA(359, 100%, 50%, 1);
 }
 .fadedRed {
     background-color: HSLA(358, 100%, 76%, 1);
@@ -113,58 +114,64 @@ footer {
 .oxfordBlue {
     background-color: HSLA(216, 62%, 17%, 1);
 }
-#exterior {
-    background-image: url(http://cl.ly/image/3S1530442r3S/exterior.jpg);
-    background-size: cover;
-    background-position: center;
+#front {
+    background-image: url("./images/front.jpg");
 }
-#livingroom {
-    background-image: url(http://cl.ly/image/2N0O3V3V172D/livingroom.jpg);
-    background-size: cover;
-    background-position: center;
+#downHall {
+    background-image: url("./images/downstairs-hallway.jpg");
+}
+#livingRoom {
+    background-image: url("./images/living-room.jpg");
+}
+#diningRoom {
+    background-image: url("./images/dining-room.jpg");
 }
 #kitchen {
-    background-image: url(http://cl.ly/image/2m1Z1l2V0f2h/kitchen.JPG);
-    background-size: cover;
-    background-position: center;
+    background-image: url("./images/kitchen.jpg");
+}
+#kitchen2 {
+    background-image: url("./images/kitchen2.jpg");
 }
 #den {
-    background-image: url(http://cl.ly/image/0y1T0o0F3Q2V/family%20room.JPG);
-    background-size: cover;
-    background-position: center;
+    background-image: url("./images/den.jpg");
 }
-#bedroom1 {
-    background-image: url(http://cl.ly/image/113K3v1f0n37/bedroom1.JPG);
-    background-size: cover;
-    background-position: center;
+#upHall {
+    background-image: url("./images/upstairs-hallway.jpg");
 }
-#bedroom2 {
-    background-image: url(http://cl.ly/image/2g0w1Q382l1I/bedroom2.jpg);
-    background-size: cover;
-    background-position: center;
+#bed1 {
+    background-image: url("./images/bed1.jpg");
+}
+#bed2 {
+    background-image: url("./images/bed2.jpg");
+}
+#back {
+    background-image: url("./images/back.jpg");
 }
 .cell2 {
     display: inline-block;
     vertical-align: top;
     margin: 0 auto;
-    width:33.33%;
+    width: 33.33%;
     height: 300px;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 .cell2:after {
-    background-color:HSLA(358, 100%, 76%, 1);
+    background-color: HSLA(358, 100%, 76%, 1);
     opacity: .5;
-    content:'';
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 /*.cell:hover {
   -webkit-transform: scale(1.5);
 }*/
- .cell2:hover {
+
+.cell2:hover {
     -webkit-transform: scale(2);
     z-index: 1;
     border: 5px solid HSLA(182, 86%, 65%, 1);
@@ -180,7 +187,7 @@ footer {
         width: 100%;
     }
     .cell2::after {
-        background-color:HSLA(358, 100%, 76%, 0);
+        background-color: HSLA(358, 100%, 76%, 0);
     }
     .cell2:hover {
         -webkit-transform: none;
@@ -195,7 +202,7 @@ footer {
     }
 }
 .upButton {
-        color: HSLA(182, 86%, 65%, 1);
+    color: HSLA(182, 86%, 65%, 1);
 }
 /*------------------javascript-----------------*/
 
@@ -204,6 +211,7 @@ footer {
     background-size: cover;
     background-position: center;
 }*/
+
 /*.upButtonMD {
     background-color: white;
 }
@@ -215,13 +223,9 @@ footer {
 .moused {
     opacity: 0;
 }
-
 .unmoused {
     opacity: 1;
 }
-
 .clicked {
     border-color: white !important;
 }
-
-
